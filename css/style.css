@@ -1,0 +1,17 @@
+.jumbotron {
+    background-color: darkred;
+    color: white;
+}
+
+footer {
+    padding: 10px 10px 10px 10px;
+    background: darkred;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.btn-reserva{
+    background: darkred;
+    color: white;
+    border-color: darkgray;
+}
