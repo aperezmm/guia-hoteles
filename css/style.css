@@ -1,6 +1,12 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .jumbotron {
     background-color: darkred;
     color: white;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 footer {
@@ -15,3 +21,4 @@ footer {
     color: white;
     border-color: darkgray;
 }
+
