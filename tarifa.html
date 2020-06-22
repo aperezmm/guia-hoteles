@@ -42,70 +42,144 @@
                 <li class="breadcrumb-item active" aria-current="page">Tarifas</li>
             </ol>
         </nav>
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead class="thead-dark">
-                    <th>Hotel</th>
-                    <th>Calidad</th>
-                    <th>Ubicación</th>
-                    <th>Precio noche</th>
-                    <th>Descripción</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Estelar Cartagena de Indias</strong></td>
-                        <td>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>Bocagrande, Cartagena de Indias</td>
-                        <td>$750.000</td>
-                        <td>Se encuentra ubicado a 1,4km del Museo del oro.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Hotel Boutique Casona del Colegio</strong></td>
-                        <td>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>Centro, Cartagena de Indias</td>
-                        <td>$850.000</td>
-                        <td>Hotel Boutique ofrece alojamiento con jardín, terraza, piscina con borde infinito y bar.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Amarla Boutique Cartagena de Indias</strong></td>
-                        <td>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>Centro, Cartagena de Indias</td>
-                        <td>$1'050.000</td>
-                        <td>Amarla Boutique ofrece alojamiento sólo para adultos con piscina al aire libre.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Bastion Luxury Hotel</strong></td>
-                        <td>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>Centro, Cartagena de Indias</td>
-                        <td>$450.000</td>
-                        <td>Moderno hotel ocupa un edificio remodelado del siglo XVI.</td>
-                    </tr>
-                </tbody>
-            </table>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="compara-tab" data-toggle="tab" href="#compara" role="tab"
+                    aria-controls="compara" aria-selected="true">Comparar</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="formasPago-tab" data-toggle="tab" href="#formasPago" role="tab"
+                    aria-controls="formasPago" aria-selected="false">Formas de pago</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="comentarioHoteles-tab" data-toggle="tab" href="#comentarioHoteles" role="tab"
+                    aria-controls="comentarioHoteles" aria-selected="false">Comentarios hoteles</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <th>Hotel</th>
+                            <th>Calidad</th>
+                            <th>Ubicación</th>
+                            <th>Precio noche</th>
+                            <th>Descripción</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Estelar Cartagena de Indias</strong></td>
+                                <td>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>Bocagrande, Cartagena de Indias</td>
+                                <td>$750.000</td>
+                                <td>Se encuentra ubicado a 1,4km del Museo del oro.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hotel Boutique Casona del Colegio</strong></td>
+                                <td>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>Centro, Cartagena de Indias</td>
+                                <td>$850.000</td>
+                                <td>Hotel Boutique ofrece alojamiento con jardín, terraza, piscina con borde infinito y
+                                    bar.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Amarla Boutique Cartagena de Indias</strong></td>
+                                <td>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>Centro, Cartagena de Indias</td>
+                                <td>$1'050.000</td>
+                                <td>Amarla Boutique ofrece alojamiento sólo para adultos con piscina al aire libre.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bastion Luxury Hotel</strong></td>
+                                <td>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>Centro, Cartagena de Indias</td>
+                                <td>$450.000</td>
+                                <td>Moderno hotel ocupa un edificio remodelado del siglo XVI.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="formasPago" role="tabpanel" aria-labelledby="formasPago-tab">
+                <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header" style="background-color: darkred; color: white;">
+                            Formas de pago
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Tarjetas debito</li>
+                            <li class="list-group-item">Tarjeta de credito</li>
+                            <li class="list-group-item">Consignación efecty</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="tab-pane fade" id="comentarioHoteles" role="tabpanel" aria-labelledby="comentarioHoteles-tab">
+                <h3>COMENTARIOS SOBRE LOS HOTELES</h3>
+                <div class="form-group col-sm-6">
+                    <label for="comentarios"><strong>Selecciona el hotel:</strong></label>
+                    <select name="hoteles" id="hotel" class="form-control">
+                        <option value="" selected>Estelar Cartagena de Indias</option>
+                        <option value="">Hotel Boutique Casona del Colegio</option>
+                        <option value="">Amarla Boutique Cartagena de Indias</option>
+                        <option value="">Bastion Luxury Hotel</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-12">
+                    <textarea name="comentarioHoteles" id="" cols="15" rows="5" class="form-control"
+                        placeholder="Ingresé el comentario sobre el Hotel"></textarea>
+                    <br>
+                    <button type="submit" class="btn-reserva">Enviar comentario</button>
+                </div>
+                
+                <div class="container">
+                    <span>
+                        <em>LOS COMENTARIOS ESTARÁN AQUÍ</em>
+                    </span>
+                </div>
+
+            </div>
+
         </div>
+
+
+
+
+
+
 
         <hr>
 

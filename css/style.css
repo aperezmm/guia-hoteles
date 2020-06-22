@@ -24,6 +24,10 @@ footer {
     width: 1250px; height: 360px;
 }
 
+.tab-content{
+    padding-top: 10px;
+}
+
 .card-hotel {
     flex: 1 200px;
     padding: 2px 5px 2px 5px;
@@ -34,6 +38,9 @@ footer {
     background: darkred;
     color: white;
     border-color: darkgray;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 .footer-address-icon {
     padding-right: 10px;
