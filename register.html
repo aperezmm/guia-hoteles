@@ -25,8 +25,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                <li class="nav-item active"><a class="nav-link" href="./about.html">Información general</a></li>
-                <li class="nav-item"><a class="nav-link" href="./register.html">Contactar</a></li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">Información general</a></li>
+                <li class="nav-item active"><a class="nav-link" href="./register.html">Contactar</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Formas de pago</a></li>
             </ul>
         </div>
@@ -39,13 +39,53 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Información general</li>
+                <li class="breadcrumb-item active" aria-current="page">Contactar</li>
             </ol>
         </nav>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugiat sequi laudantium omnis, quibusdam
-            laboriosam doloribus ut aliquid possimus rem magnam, repudiandae provident dicta aliquam. Placeat maiores
-            delectus harum ullam?
-        </span>
+
+        <h2>QUEJA O RECLAMO</h2>
+        <form action="">
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresé su nombre">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingresé su apellido">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="Ingresé su email">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-9">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Ingresé su direccion">
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="departamento">Departamento</label>
+                    <select name="departamentos" id="departamento" class="form-control">
+                        <option value="" selected>ANTIOQUIA</option>
+                        <option value="">AMAZONAS</option>
+                        <option value="">ATLANTICO</option>
+                        <option value="">CALDAS</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentario</label>
+                <textarea name="comentario" id="comentario" cols="15" rows="5" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="gridCheck">
+                    <label for="gridCheck" class="form-check-label">QUIERO QUE ME CONTACTEN.</label>
+                </div>
+            </div>
+            <button type="submit" class="btn-reserva">Enviar</button>
+        </form>
 
         <hr>
 
