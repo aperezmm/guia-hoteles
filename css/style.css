@@ -21,4 +21,10 @@ footer {
     color: white;
     border-color: darkgray;
 }
+.footer-address-icon {
+    padding-right: 10px;
+}
 
+.footer-home-icon {
+    padding-left: 10px;
+}
