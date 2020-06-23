@@ -50,13 +50,13 @@
             <div class="col-sm-4">
                 <button class="btn-reserva" type="button" data-toggle="collapse" data-target="#comoPagar"
                     aria-expanded="false" aria-controls="multiCollapse2">¿Cómo puedo pagar?</button>
-            </div>            
+            </div>
         </div>
 
         <div class="row">
             <div class="col-sm-6 collapse multi-collapse" id="comoFunciona">
                 <p>
-                    <p><em>Para realizar una reserva puedes elegir el hotel y seleccionar reservar, la pagina
+                <p><em>Para realizar una reserva puedes elegir el hotel y seleccionar reservar, la pagina
                         te guiará para evitar que tengas algún problema, y si lo tienes puedes comunicarte
                         nosotros.
                     </em></p>
@@ -64,7 +64,7 @@
             </div>
             <div class="col-sm-6 collapse multi-collapse" id="comoPagar">
                 <p>
-                    <p><em>Puedes realizar el pago con tu tarjeta de credito, tarjeta debito y consignación.</em></p>
+                <p><em>Puedes realizar el pago con tu tarjeta de credito, tarjeta debito y consignación.</em></p>
                 </p>
             </div>
         </div>
@@ -85,7 +85,7 @@
             <img src="images/estelar-cartagena.jpg" alt="hotel img"
                 style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
             <br>
-            <button class="btn btn-info btn-reserva">RESERVAR<span class="oi oi-cart footer-home-icon"></span></button>
+            <button class="btn btn-info btn-reserva" data-toggle="modal" data-target="#reserva">RESERVAR<span class="oi oi-cart footer-home-icon"></span></button>
         </div>
 
         <div class=" card card-hotel d-flex flex-wrap">
@@ -98,7 +98,7 @@
             <img src="images/boutique-casona.jpg" alt="hotel img"
                 style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
             <br>
-            <button class="btn btn-info btn-reserva">RESERVAR<span class="oi oi-cart footer-home-icon"></span></button>
+            <button class="btn btn-info btn-reserva" data-toggle="modal" data-target="#reserva">RESERVAR<span class="oi oi-cart footer-home-icon"></span></button>
         </div>
 
         <div class="card card-hotel d-flex flex-wrap">
@@ -111,9 +111,78 @@
             <img src="images/bastion-luxury.jpg" alt="hotel img"
                 style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
             <br>
-            <button class="btn btn-info btn-reserva">RESERVAR<span class="oi oi-cart footer-home-icon"></span></button>
+            <button class="btn btn-info btn-reserva" data-toggle="modal" data-target="#reserva">RESERVAR<span class="oi oi-cart footer-home-icon"></span></button>
         </div>
         <br>
+
+        <div class="modal fade" id="reserva" tabindex="-1" role="dialog" aria-labelledby="modalReserva"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalReserva">Datos de la reserva</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="userName" class="col-form-label">Nombre completo:</label>
+                                <input type="text" class="form-control" id="userName">
+                            </div>
+                            <div class="form-group">
+                                <label for="userEmail" class="col-form-label">Email:</label>
+                                <input type="text" class="form-control" id="userEmail">
+                            </div>
+                            <div class="form-group">
+                                <label for="userCellphone" class="col-form-label">Numero telefonico:</label>
+                                <input type="number" class="form-control" id="userCellphone">
+                            </div>
+                            <div class="form-group">
+                                <label for="quantityPeople" class="col-form-label">Cantidad de personas:</label>
+                                <select name="quantityPeople" id="quantityPeople">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="quantityChild" class="col-form-label">Cantidad de menores de edad:</label>
+                                <select name="quantityChild" id="quantityChild">
+                                    <option value="0" selected>0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userCome" class="col-form-label">Llegada:</label>
+                                <input type="date" name="date" id="userCome">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userBack" class="col-form-label">Regreso:</label>
+                                <input type="date" name="date" id="userBack">
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn-reserva" style="margin-left: auto; margin-right: auto;">Proceder con el pago</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </div>
 
