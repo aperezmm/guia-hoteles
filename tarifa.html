@@ -132,16 +132,59 @@
             </div>
 
             <div class="tab-pane fade" id="formasPago" role="tabpanel" aria-labelledby="formasPago-tab">
-                <div class="d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header" style="background-color: darkred; color: white;">
-                            Formas de pago
+                <div class="accordion" id="accordionPago">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseDebito" aria-expanded="false" aria-controls="collapseDebito">
+                                    <p>Tarjeta debito</p>
+                                </button>
+                            </h5>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Tarjetas debito</li>
-                            <li class="list-group-item">Tarjeta de credito</li>
-                            <li class="list-group-item">Consignación efecty</li>
-                        </ul>
+                        <div id="collapseDebito" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#collapseDebito">
+                            <div class="card-body">
+                                <p>Puedes pagar o reservar con tu tarjeta debito pago PSE.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseCredito" aria-expanded="false"
+                                    aria-controls="collapseCredito">
+                                    <p>Tarjeta de credito</p>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseCredito" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#collapseCredito">
+                            <div class="card-body">
+                                <p>Puedes pagar o reservar con tu tarjeta MasterCard o Visa</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseConsignacion" aria-expanded="false"
+                                    aria-controls="collapseConsignacion">
+                                    <p>Consignación</p>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseConsignacion" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#collapseConsignacion">
+                            <div class="card-body">
+                                <p>Puedes pagar o realizar reserva haciendo consignación a Bancolombia adjuntando
+                                    comprobante al número +57 333 3333 33 33</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -164,7 +207,7 @@
                     <br>
                     <button type="submit" class="btn-reserva">Enviar comentario</button>
                 </div>
-                
+
                 <div class="container">
                     <span>
                         <em>LOS COMENTARIOS ESTARÁN AQUÍ</em>
