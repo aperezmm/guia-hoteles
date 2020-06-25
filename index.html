@@ -43,11 +43,13 @@
         </nav>
 
         <div class="row">
-            <div class="col-sm-4" style="margin-left: auto; margin-right: auto;">
+            <div class="col-sm-4" style="margin-left: auto; margin-right: auto;" data-toggle="tooltip"
+                data-placement="top" title="No dudes en contactar!">
                 <button class="btn-reserva" type="button" data-toggle="collapse" data-target="#comoFunciona"
                     aria-expanded="false" aria-controls="multiCollapse">¿Cómo funciona la reserva?</button>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4" data-toggle="tooltip" data-placement="top"
+                title="Tarjeta de crédito, débito o consignación.">
                 <button class="btn-reserva" type="button" data-toggle="collapse" data-target="#comoPagar"
                     aria-expanded="false" aria-controls="multiCollapse2">¿Cómo puedo pagar?</button>
             </div>
@@ -98,7 +100,8 @@
             <img src="images/boutique-casona.jpg" alt="hotel img"
                 style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
             <br>
-            <button class="btn btn-info btn-reserva" data-toggle="modal" data-target="#reserva">RESERVAR<span class="oi oi-cart footer-home-icon"></span></button>
+            <button class="btn btn-info btn-reserva" data-toggle="modal" data-target="#reserva">RESERVAR<span
+                    class="oi oi-cart footer-home-icon"></span></button>
         </div>
 
         <div class="card card-hotel d-flex flex-wrap">
@@ -111,7 +114,8 @@
             <img src="images/bastion-luxury.jpg" alt="hotel img"
                 style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
             <br>
-            <button class="btn btn-info btn-reserva" data-toggle="modal" data-target="#reserva">RESERVAR<span class="oi oi-cart footer-home-icon"></span></button>
+            <button class="btn btn-info btn-reserva" data-toggle="modal" data-target="#reserva">RESERVAR<span
+                    class="oi oi-cart footer-home-icon"></span></button>
         </div>
         <br>
 
@@ -138,6 +142,7 @@
                             <div class="form-group">
                                 <label for="userCellphone" class="col-form-label">Numero telefonico:</label>
                                 <input type="number" class="form-control" id="userCellphone">
+
                             </div>
                             <div class="form-group">
                                 <label for="quantityPeople" class="col-form-label">Cantidad de personas:</label>
@@ -175,9 +180,10 @@
                             </div>
                         </form>
                     </div>
-                    
+
                     <div class="modal-footer">
-                        <button type="button" class="btn-reserva" style="margin-left: auto; margin-right: auto;">Proceder con el pago</button>
+                        <button type="button" class="btn-reserva"
+                            style="margin-left: auto; margin-right: auto;">Proceder con el pago</button>
                     </div>
 
                 </div>
@@ -212,6 +218,12 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 </body>
 
 </html>
