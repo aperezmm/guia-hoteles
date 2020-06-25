@@ -42,6 +42,14 @@ footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
+
+#carouselHome{
+    width: 60%; 
+    height: 90%; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
 .footer-address-icon {
     padding-right: 10px;
 }
