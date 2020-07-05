@@ -57,47 +57,43 @@
 
         <div class="row">
             <div class="col-sm-6 collapse multi-collapse" id="comoFunciona">
-                <p>
                 <p><em>Para realizar una reserva puedes elegir el hotel y seleccionar reservar, la pagina
                         te guiará para evitar que tengas algún problema, y si lo tienes puedes comunicarte
                         nosotros.
                     </em></p>
-                </p>
             </div>
             <div class="col-sm-6 collapse multi-collapse" id="comoPagar">
-                <p>
                 <p><em>Puedes realizar el pago con tu tarjeta de credito, tarjeta debito y consignación.</em></p>
-                </p>
             </div>
         </div>
         <hr>
 
         <div id="carouselHome" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselHome" data-slide-to="1"></li>
-              <li data-target="#carouselHome" data-slide-to="2"></li>
+                <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselHome" data-slide-to="1"></li>
+                <li data-target="#carouselHome" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-              <div class="carousel-item active" data-interval="2000">
-                <img class="d-block w-100" src="images/estelar-cartagena.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item" data-interval="2000">
-                <img class="d-block w-100" src="images/boutique-casona.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item" data-interval="2000">
-                <img class="d-block w-100" src="images/bastion-luxury.jpg" alt="Third slide">
-              </div>
+                <div class="carousel-item active" data-interval="2000">
+                    <img class="d-block w-100" src="images/estelar-cartagena.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img class="d-block w-100" src="images/boutique-casona.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img class="d-block w-100" src="images/bastion-luxury.jpg" alt="Third slide">
+                </div>
             </div>
             <a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselHome" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
             </a>
-          </div>
+        </div>
 
         <div class="card card-hotel d-flex flex-wrap">
             <h2 class="card-title">Estelar Cartagena de Indias</h2>
@@ -110,7 +106,8 @@
             <img src="images/estelar-cartagena.jpg" alt="hotel img"
                 style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
             <br>
-            <button class="btn btn-info btn-reserva" data-toggle="modal" data-target="#reserva">RESERVAR<span class="oi oi-cart footer-home-icon"></span></button>
+            <button id="btnReserva" class="btn btn-info btn-reserva" data-toggle="modal"
+                data-target="#reserva">RESERVAR<span class="oi oi-cart footer-home-icon"></span></button>
         </div>
 
         <div class=" card card-hotel d-flex flex-wrap">
@@ -123,8 +120,8 @@
             <img src="images/boutique-casona.jpg" alt="hotel img"
                 style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
             <br>
-            <button class="btn btn-info btn-reserva" data-toggle="modal" data-target="#reserva">RESERVAR<span
-                    class="oi oi-cart footer-home-icon"></span></button>
+            <button id="btnReserva" class="btn btn-info btn-reserva" data-toggle="modal"
+                data-target="#reserva">RESERVAR<span class="oi oi-cart footer-home-icon"></span></button>
         </div>
 
         <div class="card card-hotel d-flex flex-wrap">
@@ -137,8 +134,8 @@
             <img src="images/bastion-luxury.jpg" alt="hotel img"
                 style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
             <br>
-            <button class="btn btn-info btn-reserva" data-toggle="modal" data-target="#reserva">RESERVAR<span
-                    class="oi oi-cart footer-home-icon"></span></button>
+            <button id="btnReserva" class="btn btn-info btn-reserva" data-toggle="modal"
+                data-target="#reserva">RESERVAR<span class="oi oi-cart footer-home-icon"></span></button>
         </div>
         <br>
 
@@ -212,7 +209,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <footer>
@@ -238,15 +234,30 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
             $('[data-toggle="popover"]').popover();
             $('.carousel').carousel({
                 interval: 0001
+            });
+
+            $('#reserva').on('show.bs.modal', function (e) {
+                console.log('El modal reserva se abrió');
+            });
+
+            $('#reserva').on('hidden.bs.modal', function (e) {
+                console.log('El modal reserva se cerró');
             });
         });
     </script>
