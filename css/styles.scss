@@ -1,0 +1,61 @@
+$darkred: #ba1e1e; //Usamos la variable darkred en las demás hojas donde se vayan a usar.
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.jumbotron {
+    background-color: $darkred;
+    color: white;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 0px;
+}
+
+footer {
+    padding: 10px 10px 10px 10px;
+    background: $darkred;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.image-home{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1250px; height: 360px;
+}
+
+.tab-content{
+    padding-top: 10px;
+}
+
+.card-hotel {
+    flex: 1 200px;
+    padding: 2px 5px 2px 5px;
+    margin-top: 10px;
+}
+
+.btn-reserva{
+    background:$darkred;
+    color: white;
+    border-color: darkgray;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#carouselHome{
+    width: 60%; 
+    height: 90%; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.footer-address-icon {
+    padding-right: 10px;
+}
+
+.footer-home-icon {
+    padding-left: 10px;
+}
