@@ -1,5 +1,9 @@
 $darkred: #ba1e1e; //Usamos la variable darkred en las demás hojas donde se vayan a usar.
 
+@mixin general {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
